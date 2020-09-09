@@ -1,0 +1,7 @@
+<header>
+  <button (click)="login()" *ngIf="!loggedIn">Log In</button>
+  <button (click)="logout()" *ngIf="loggedIn">Log Out</button>
+  <a routerLink="/">Home</a>&nbsp;
+  <a routerLink="profile" *ngIf="loggedIn">Profile</a>
+  <p>Loggedin: {{ loggedIn }}</p>
+</header>
